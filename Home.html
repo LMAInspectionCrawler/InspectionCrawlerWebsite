@@ -10,41 +10,50 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/homeStyles.css">
 </head>
 <body>
-	<nav class="navbar">
-		<a class="navbar-brand" href="#">Lockheed Martin</a>
-		<a class="pull-right" href="#">Hello, Martin</a>
-	</nav>
+	<div class="grid">
 
-	<div id="homeContent">
-		<form class="form-inline navbar-form">
-			<input class="form-control" type="text" placeholder="Search">
-			<button class="btn btn-success-outline" type="submit">Search</button>
-		</form>
+		<div class="navigation">
+			<div>
+				<a id="brandLogo" href="#">Lockheed Martin</a>
+			</div>
+			<div class="profileInfo">
+				<a id="greeting" href="#">Hello, Martin</a>
+				<image id="navProfilePic" src="resources/placeholder-man.png" />
+			</div>
+		</div>
 
-		<table id="inspections">
-			<tr>
-				<th>Date</th>
-				<th>Crawler Name</th>
-			</tr>
-			<tr class="table-active">
-				<td>8/9/18</td>
-				<td>Crawler 1</td>
-			</tr>
-			<tr class="table-active">
-				<td>8/9/18</td>
-				<td>Crawler 1</td>
-			</tr>
-			<tr>
-				<td>8/2/18</td>
-				<td>Crawler 1</td>
-			</tr>
-			<tr>
-				<td>7/24/18</td>
-				<td>Crawler 1</td>
-			</tr>
-		</table>
+		<div id="inspectionList">
+			<form class="form-inline navbar-form">
+				<input class="form-control" type="text" placeholder="Search">
+				<button class="btn btn-success-outline" type="submit">Search</button>
+			</form>
+
+			<table id="inspections">
+				<tr>
+					<th>Date</th>
+					<th>Crawler Name</th>
+				</tr>
+				<tr class="table-active">
+					<td>8/9/18</td>
+					<td>Crawler 1</td>
+				</tr>
+				<tr class="table-active">
+					<td>8/9/18</td>
+					<td>Crawler 1</td>
+				</tr>
+				<tr>
+					<td>8/2/18</td>
+					<td>Crawler 1</td>
+				</tr>
+				<tr>
+					<td>7/24/18</td>
+					<td>Crawler 1</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 </body>
 </html>

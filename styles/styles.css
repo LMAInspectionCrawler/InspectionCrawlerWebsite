@@ -30,3 +30,51 @@ a {
 	font-weight: 400;
 	line-height: 18px;
 }
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+}
+
+/* To be removed after layout is complete */
+.grid div {
+	border: #000 1px solid;
+}
+
+.navigation {
+	grid-auto-rows: 80px;
+	grid-column: 1/9;
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	background-color: #003478;
+}
+
+.navigation a {
+	color: white;
+}
+
+#brandLogo {
+	grid-column: 1/6;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 33px;
+	font-style: italic;
+}
+
+.profileInfo {
+	justify-self: end;
+}
+
+#greeting {
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 33px;
+}
+
+#navProfilePic {
+	height: 80px;
+}
+
+#inspectionList {
+	grid-column: 2/8;
+}
