@@ -19,7 +19,6 @@ input[type="text"], input[type="password"] {
 	/* center input boxes */
 	display: block;
 	margin: 0 auto;
-	width: 20em;
 }
 
 #registerLink {

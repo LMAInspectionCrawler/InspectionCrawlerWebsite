@@ -16,43 +16,75 @@
 	<div class="grid">
 
 		<div class="navigation">
-			<div>
-				<a id="brandLogo" href="#">Lockheed Martin</a>
+			<div id="brandLogo">
+				<a href="#">Lockheed Martin</a>
 			</div>
-			<div class="profileInfo">
+			<div id="profileInfo">
 				<a id="greeting" href="#">Hello, Martin</a>
 				<image id="navProfilePic" src="resources/placeholder-man.png" />
 			</div>
 		</div>
 
-		<div id="inspectionList">
-			<form class="form-inline navbar-form">
-				<input class="form-control" type="text" placeholder="Search">
-				<button class="btn btn-success-outline" type="submit">Search</button>
-			</form>
-
-			<table id="inspections">
-				<tr>
-					<th>Date</th>
-					<th>Crawler Name</th>
-				</tr>
-				<tr class="table-active">
-					<td>8/9/18</td>
-					<td>Crawler 1</td>
-				</tr>
-				<tr class="table-active">
-					<td>8/9/18</td>
-					<td>Crawler 1</td>
-				</tr>
-				<tr>
-					<td>8/2/18</td>
-					<td>Crawler 1</td>
-				</tr>
-				<tr>
-					<td>7/24/18</td>
-					<td>Crawler 1</td>
-				</tr>
-			</table>
+		<div id="inspections">
+			<div id="inspectionSearch">
+				<form class="form-inline navbar-form">
+					<input class="form-control" type="text" placeholder="Search">
+					<button class="btn btn-success-outline" type="submit">Search</button>
+				</form>
+			</div>
+			<div id="inspectionList">
+				<table id="inspectionTable">
+					<tr>
+						<th>Inspection #</th>
+						<th>Date</th>
+						<th>Bay</th>
+						<th>Defects Found</th>
+						<th>Crawler Name</th>
+					</tr>
+					<tr class="table-active">
+						<td>6</td>
+						<td>8/14/18</td>
+						<td>5</td>
+						<td>-</td>
+						<td>Luis</td>
+					</tr>
+					<tr class="table-active">
+						<td>5</td>
+						<td>8/14/18</td>
+						<td>1</td>
+						<td>-</td>
+						<td>Francisco</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>8/7/18</td>
+						<td>5</td>
+						<td>1</td>
+						<td>Orlando</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>8/2/18</td>
+						<td>2</td>
+						<td>3</td>
+						<td>Cynthia</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>7/24/18</td>
+						<td>1</td>
+						<td>0</td>
+						<td>Martin</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>7/20/18</td>
+						<td>3</td>
+						<td>2</td>
+						<td>Brian</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</div>
 </body>

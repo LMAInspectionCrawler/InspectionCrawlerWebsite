@@ -15,6 +15,10 @@ label {
   	line-height: 34px;
 }
 
+input[type="text"], input[type="password"] {
+	width: 20em;
+}
+
 .btn {
 	height: 50px;
 	width: 12em;
@@ -22,6 +26,7 @@ label {
 
 .btn-primary {
 	background-color: #47525E;
+	border-color: #47525E;
 }
 
 a {
@@ -33,19 +38,14 @@ a {
 
 .grid {
 	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-}
-
-/* To be removed after layout is complete */
-.grid div {
-	border: #000 1px solid;
+	grid-template-columns: repeat(10, 1fr);
 }
 
 .navigation {
 	grid-auto-rows: 80px;
-	grid-column: 1/9;
+	grid-column: 1/11;
 	display: grid;
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: 4fr 2fr;
 	background-color: #003478;
 }
 
@@ -54,27 +54,34 @@ a {
 }
 
 #brandLogo {
-	grid-column: 1/6;
-	font-size: 40px;
+	padding-top: 25px;
+	padding-left: 10px;
+}
+
+#brandLogo a {
+	font-size: 50px;
 	font-weight: 400;
 	line-height: 33px;
 	font-style: italic;
 }
 
-.profileInfo {
+#profileInfo {
 	justify-self: end;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 #greeting {
+	padding-right: 1em;
 	font-size: 26px;
 	font-weight: 400;
 	line-height: 33px;
 }
 
 #navProfilePic {
-	height: 80px;
+	height: 60px;
 }
 
-#inspectionList {
-	grid-column: 2/8;
-}
+
+
+
