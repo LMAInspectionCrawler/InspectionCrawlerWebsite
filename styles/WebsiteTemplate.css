@@ -1,0 +1,87 @@
+.hg {
+	background-color: #E2E9EC;
+}
+
+/* Header styles */
+
+.hg__header {
+	/* Layout */
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+	grid-template-rows: 1em 1fr 1em;
+
+	/* Colors */
+	background-color: #003478;
+	color: white;
+
+	/* Font */
+	font-family: Lato;
+}
+
+.brandLogo {
+	/* Layout */
+	grid-row: 2/3;
+	padding-left: 20px;
+	padding-top: 10px;
+
+	/* Font */
+	font-size: 40px;
+}
+
+.profileLink {
+	/* Layout */
+	grid-row: 2/3;
+	grid-gap: 1em;
+	padding-right: 20px;
+
+	/* Nested grid */
+	display: grid;
+	grid-template-columns: 1fr 60px;
+	justify-items: end;
+}
+
+.greeting {
+	font-size: 24px;
+}
+
+.profileLogo {
+	height: 60px;
+}
+
+@media screen and (max-width: 600px) {
+	.hg__header {
+		grid-template-rows: 1fr;
+	}
+
+	.brandLogo {
+		padding-top: 5px;
+	}
+
+	.profileLink {
+		padding-top: 10px;
+	}
+}
+
+/* Component styles */
+
+input {
+    border: none;
+	border-radius: 8px;
+	padding-left: 5px;
+}
+
+button {
+	background-color: #003478;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+	border-radius: 12px;
+}
+
+table {
+	border-radius: 4px;
+}

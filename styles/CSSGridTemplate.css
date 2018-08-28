@@ -1,0 +1,29 @@
+.hg__header { grid-area: header; }
+.hg__main { grid-area: main; }
+.hg__left { grid-area: navigation; }
+.hg__right { grid-area: ads; }
+
+.hg {
+	margin: 0px;
+	display: grid;
+	grid-template-areas: "header header header"
+	                     "navigation main ads";
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 100px 
+						1fr;
+	min-height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+	.hg {
+		grid-template-areas: "header"
+		                     "navigation"
+		                     "main"
+		                     "ads";
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 
+							50px 
+							1fr
+							50px;
+	}
+}

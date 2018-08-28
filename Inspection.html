@@ -2,32 +2,66 @@
 <html>
 <head>
 	<title>Quality Inspection Crawlers</title>
-
-	<!-- Import Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/CSSGridTemplate.css">
+	<link rel="stylesheet" href="styles/WebsiteTemplate.css">
+	<link rel="stylesheet" href="styles/InspectionStyle.css">
 </head>
-<body>
-	<nav class="navbar">
-		<a class="navbar-brand" href="#">Lockheed Martin</a>
-		<a class="pull-right" href="#">Hello, Martin</a>
-	</nav>
+<body class="hg">
+	<header class="hg__header">
+		<div class="brandLogo">
+			Lockheed Martin
+		</div><!-- /brandLogo -->
+		<div class="profileLink">
+			<p class="greeting">Hello, Martin!</p>
+			<image class="profileLogo" src="resources/placeholder-man.png" />
+		</div><!-- /profileLink -->
+	</header>
 
-	<div id="inspectionContent" class="row">
-		<div id="chatBox" class="col-3">
-			<p>Chat box goes here</p>
-		</div>
-		<div id="inspectionStream" class="col-6 text-center">
-			<p>Inspection stream goes here</p>
-			<button id="annotateBtn" class="btn btn-primary">Click to annotate</button>
-		</div>
-		<div id="defectsBox" class="col-3">
-			<p>Defects box goes here</p>
-		</div>
-	</div>
+	<main class="hg__main">
+		<video class="streamVideo" src="resources/PlaceholderStreamVideo.mp4" controls>
+			Your browser does not support video tags. Please try with the Google Chrome browser.
+		</video>
+	</main>
+
+	<aside class="hg__left">
+		<div class="systemMessage">Martin has joined</div>
+
+		<div class="messageOther">
+			Blah blah blah
+			<image class="profilePic" src="resources/placeholder-man.png" />
+		</div><!-- /messageOther -->
+
+		<div class="messageMe">
+			<image class="profilePic" src="resources/placeholder-man.png" />
+			Blah blah blah
+		</div><!-- /messageMe -->
+
+		<div class="systemMessage">Alicia has left</div>
+
+		<div class="messageOther">
+			Blah blah blah
+			<image class="profilePic" src="resources/placeholder-man.png" />
+		</div><!-- /messageOther -->
+
+		<div class="messageOther">
+			Blah blah blah
+			<image class="profilePic" src="resources/placeholder-man.png" />
+		</div><!-- /messageOther -->
+
+		<div class="messageOther">
+			Blah blah blah
+			<image class="profilePic" src="resources/placeholder-man.png" />
+		</div><!-- /messageOther -->
+	</aside>
+	<aside class="hg__right">
+		<div class="defect">
+			<image class="defectImage" src="resources/WasherPlaceholder.png" />
+			<p class="classification">Washer</p>
+		</div><!-- /defect -->
+		<div class="defect">
+			<image class="defectImage" src="resources/TapePlaceholder.png" />
+			<p class="classification">Tape</p>
+		</div><!-- /defect -->
+	</aside>
 </body>
 </html>
