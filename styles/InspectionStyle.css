@@ -5,7 +5,7 @@
 	padding: 1em;
 
 	/* Styles */
-	background-color: white;
+	background-color: var(--white, white);
 
 	/* Fonts */
 	text-align: center;
@@ -31,13 +31,14 @@
 
 .messageOther {
 	grid-template-columns: 1fr 50px;
-	background-color: #D6D6D6;
+	background-color: var(--off-white-2, #EFF2F7);
 	padding-right: 1em;
 }
 
 .messageMe {
 	grid-template-columns: 50px 1fr;
-	background-color: #B9CBD2;
+	background-color: var(--dark-color-2, black);
+	color: var(--white, white);
 	padding-left: 1em;
 }
 
@@ -59,17 +60,25 @@
 /* Defect list section */
 
 .hg__right {
-	background-color: white;
+	background-color: var(--white, white);
 
 	/* Nested grid */
 	display: grid;
+	grid-template-rows: 1fr 400px;
+	grid-row-gap: 1em;
+}
+
+.defects {
+	/* Nested grid */
+	display: grid;
+	grid-template-columns: 1fr;
 	grid-template-rows: repeat(6, 150px);
 	grid-gap: 1em;
 }
 
 .defect {
 	/* Color */
-	background-color: #85A1AD;
+	background-color: var(--dark-color-2, black);
 	color: white;
 
 	/* Nested grid */
@@ -91,4 +100,61 @@
 	margin: 20px;
 	width: 150px;
 	border-radius: 12px;
+}
+
+.defectPopup {
+	background-color: var(--dark-color-2, black);
+
+	/* Nested Grid */
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 3fr
+						2fr
+						1fr;
+}
+
+.defectImage {
+	align-self: center;
+	justify-self: center;
+	border-radius: 0px;
+	width: 90%;
+}
+
+.defectButtons {
+	/* Nested Grid */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.defectInfo {
+	align-self: center;
+	color: var(--white, white);
+	text-align: center;
+
+	/* Nested Grid */
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+}
+
+.defectInfo h3 {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.defectInfo p {
+	font-size: 30px;
+}
+
+.defectInfo select {
+	width:8em;
+	height: 30px;
+	font-size: 20px;
+}
+
+
+.defectButtons button {
+	width: 80%;
+	height: 60%;
+	justify-self: center;
+	align-self: center;
 }

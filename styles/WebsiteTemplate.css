@@ -1,5 +1,17 @@
 .hg {
-	background-color: #E2E9EC;
+	/* Color variables for site */
+	--light-color: #E2E9EC;
+	--dark-color: #003478;
+	--dark-color-2: #85A1AD;
+	--white: #FFF;
+	--off-white: #F9FAFC;
+	--off-white-2: #EFF2F7;
+	--success-color: #75d681;
+	--gray-font: #47525E;
+	--my-border-color: #C0CCDA;
+
+	background-color: var(--light-color, white);
+	color: var(--gray-font);
 }
 
 /* Header styles */
@@ -11,7 +23,7 @@
 	grid-template-rows: 1em 1fr 1em;
 
 	/* Colors */
-	background-color: #003478;
+	background-color: var(--dark-color, black);
 	color: white;
 
 	/* Font */
@@ -70,8 +82,13 @@ input {
 	padding-left: 5px;
 }
 
+select {
+	border-radius: 8px;
+	color: var(--gray-font, black);
+}
+
 button {
-	background-color: #003478;
+	background-color: var(--dark-color, black);
     border: none;
     color: white;
     text-align: center;

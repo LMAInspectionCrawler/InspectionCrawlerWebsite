@@ -54,14 +54,38 @@
 		</div><!-- /messageOther -->
 	</aside>
 	<aside class="hg__right">
-		<div class="defect">
+		<div id="defects">
+			<div class="defect" id="defect1">
+				<image class="defectImage" src="resources/WasherPlaceholder.png" />
+				<p class="classification">Washer</p>
+			</div><!-- /defect -->
+			<div class="defect" id="defect2">
+				<image class="defectImage" src="resources/TapePlaceholder.png" />
+				<p class="classification">Tape</p>
+			</div><!-- /defect -->
+		</div><!-- /defects -->
+
+		<div class="defectPopup">
 			<image class="defectImage" src="resources/WasherPlaceholder.png" />
-			<p class="classification">Washer</p>
-		</div><!-- /defect -->
-		<div class="defect">
-			<image class="defectImage" src="resources/TapePlaceholder.png" />
-			<p class="classification">Tape</p>
-		</div><!-- /defect -->
+			<div class="defectInfo">
+				<div class="defectID">
+					<h3>ID</h3>
+					<p>123</p>
+				</div><!-- /defectID -->
+				<div class="defectClass">
+					<h3>Classification</h3>
+					<select>
+						<option value="volvo">Tape</option>
+						<option value="saab">Washer</option>
+						<option value="opel">Unknown</option>
+					</select>
+				</div><!-- /defectClass -->
+			</div><!-- /defectInfo -->
+			<div class="defectButtons">
+				<button type="submit">Save</button type="submit">
+				<button>Close</button>
+			</div><!-- /defectButtons -->
+		</div><!-- / -->
 	</aside>
 </body>
 </html>

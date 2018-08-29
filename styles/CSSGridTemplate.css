@@ -22,8 +22,9 @@
 		                     "ads";
 		grid-template-columns: 100%;
 		grid-template-rows: 100px 
-							50px 
-							1fr
-							50px;
+							auto 
+							500px
+							auto;
+		grid-row-gap: 3em;
 	}
 }
