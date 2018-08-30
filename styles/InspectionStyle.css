@@ -59,12 +59,21 @@
 /* Stream section */
 .hg__main {
 	display: grid;
+	grid-template-rows: 1fr
+						50px
+						1em;
 }
 
 .streamVideo {
 	max-width: 100%;
-	max-height: 100%;
+	max-height: 90%;
 	justify-self: center;
+}
+
+#annotateButton {
+	justify-self: center;
+	width: 10em;
+	height: 3em;
 }
 
 /* Defect list section */
