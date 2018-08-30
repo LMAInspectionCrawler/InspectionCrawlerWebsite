@@ -88,6 +88,10 @@
 	align-content: center;
 }
 
+.defect:hover {
+	background-color: var(--dark-color, black);
+}
+
 .classification {
 	font-size: 24px;
 	display: grid;
@@ -120,12 +124,6 @@
 	width: 90%;
 }
 
-.defectButtons {
-	/* Nested Grid */
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
 .defectInfo {
 	align-self: center;
 	color: var(--white, white);
@@ -151,10 +149,20 @@
 	font-size: 20px;
 }
 
+.defectButtons {
+	/* Nested Grid */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
 
 .defectButtons button {
 	width: 80%;
 	height: 60%;
 	justify-self: center;
 	align-self: center;
+}
+
+.defectButtons button:hover {
+	background-color: var(--dark-color-2, black);
+	border: var(--dark-color, black) 2px solid;
 }

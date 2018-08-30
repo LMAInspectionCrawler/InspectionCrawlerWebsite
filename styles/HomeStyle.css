@@ -44,6 +44,14 @@ tr:nth-child(odd) {
 	background-color: var(--off-white, #EEE);
 }
 
+tr:hover {
+	opacity: 0.5;
+}
+
+.table-header:hover {
+	opacity: 1.0;
+}
+
 td {
 	color: var(--gray-font, gray);
 	height: 4em;

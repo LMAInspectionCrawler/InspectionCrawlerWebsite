@@ -38,16 +38,14 @@ input[type="text"], input[type="password"] {
 	justify-self: center;
 }
 
-#registerLink {
+#registerLink, #forgotPwdLink {
 	margin: 2em;
 	text-decoration: none;
 	color: var(--gray-font);
 }
 
-#forgotPwdLink {
-	margin: 2em;
-	text-decoration: none;
-	color: var(--gray-font);
+#registerLink:hover, #forgotPwdLink:hover {
+	color: var(--dark-color-2, black);
 }
 
 #loginForm button {

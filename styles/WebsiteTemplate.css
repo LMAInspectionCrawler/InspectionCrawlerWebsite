@@ -99,6 +99,14 @@ button {
 	border-radius: 12px;
 }
 
+button:hover {
+	background-color: var(--dark-color-2, black);
+}
+
+a:hover {
+	color: var(--dark-color-2, black);
+}
+
 table {
 	border-radius: 4px;
 }
