@@ -1,8 +1,24 @@
 .hg__main {
 	/* Nested grid */
 	display: grid;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 100px
 						1fr;
+}
+
+#startInspection {
+	padding-bottom: 1em;
+	
+	/* Nested Grid */
+	display: grid;
+}
+
+#startInspection button {
+	align-self: end;
+	justify-self: start;
+	width: 10em;
+	height: 3em;
+	vertical-align: center;
 }
 
 #inspectionSearch {
@@ -19,6 +35,10 @@
 #inspectionSearch button {
 	width: 5em;
 	height: 3em;
+}
+
+#inspectionList {
+	grid-column: 1/3;
 }
 
 #inspectionTable {
