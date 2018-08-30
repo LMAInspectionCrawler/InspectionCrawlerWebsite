@@ -1,0 +1,90 @@
+.hg__right {
+	/* Nested Grid */
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px
+						4fr
+						2fr
+						1fr;
+	padding-top: 10em;
+	padding-bottom: 10em;
+}
+
+.annotationButtons {
+	/* Nested Grid */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.annotationButton {
+	justify-self: center;
+	align-self: center;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	border: var(--dark-color, black) 2px solid;
+}
+
+.annotationButton:hover {
+	opacity: 0.5;
+}
+
+.colorPickerContainer {
+	display: grid;
+}
+
+#annotationColor {
+	/* Layout */
+	padding: 1em;
+	width: 80%;
+	max-width: 200px;
+	height: 80%;
+	max-height: 200px;
+	align-self: center;
+	justify-self: center;
+
+	/* Colors */
+	background-color: var(--white, white);
+	-webkit-appearance: none;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+}
+
+/* May not be supported by all browsers */
+#annotationColor::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+#annotationColor::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.brushThickness {
+	padding: 1em;
+
+	/* Nested Grid */
+	display: grid;
+	grid-gap: 2em;
+	justify-content: center;
+	align-content: center;
+}
+
+.brushThickness label {
+	font-size: 24px;
+}
+
+.annotationClearButtons {
+	/* Nested Grid */
+	display: grid;
+}
+
+.annotationClearButtons button {
+	justify-self: center;
+	width: 10em;
+	height: 3em;
+}

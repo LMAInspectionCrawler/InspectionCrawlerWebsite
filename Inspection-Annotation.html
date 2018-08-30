@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quality Inspection Crawlers</title>
+	<link rel="stylesheet" href="styles/CSSGridTemplate.css">
+	<link rel="stylesheet" href="styles/WebsiteTemplate.css">
+	<link rel="stylesheet" href="styles/InspectionStyle.css">
+	<link rel="stylesheet" href="styles/InspectionAnnotationStyle.css">
+</head>
+<body class="hg">
+	<header class="hg__header">
+		<div class="brandLogo">
+			Lockheed Martin
+		</div><!-- /brandLogo -->
+		<div class="profileLink">
+			<p class="greeting">Hello, Martin!</p>
+			<image class="profileLogo" src="resources/placeholder-man.png" />
+		</div><!-- /profileLink -->
+	</header>
+
+	<main class="hg__main">
+		<video class="streamVideo" src="resources/PlaceholderStreamVideo.mp4" controls>
+			Your browser does not support video tags. Please try with the Google Chrome browser.
+		</video>
+	</main>
+
+	<aside class="hg__left">
+		<div class="systemMessage">Martin has joined</div>
+
+		<div class="messageOther">
+			Blah blah blah
+			<image class="profilePic" src="resources/placeholder-man.png" />
+		</div><!-- /messageOther -->
+
+		<div class="messageMe">
+			<image class="profilePic" src="resources/placeholder-man.png" />
+			Blah blah blah
+		</div><!-- /messageMe -->
+
+		<div class="systemMessage">Alicia has left</div>
+
+		<div class="messageOther">
+			Blah blah blah
+			<image class="profilePic" src="resources/placeholder-man.png" />
+		</div><!-- /messageOther -->
+
+		<div class="messageOther">
+			Blah blah blah
+			<image class="profilePic" src="resources/placeholder-man.png" />
+		</div><!-- /messageOther -->
+
+		<div class="messageOther">
+			Blah blah blah
+			<image class="profilePic" src="resources/placeholder-man.png" />
+		</div><!-- /messageOther -->
+	</aside>
+	<aside class="hg__right">
+		<div class="annotationButtons">
+			<image class="annotationButton" src="resources/TextIcon.png" />
+			<image class="annotationButton" src="resources/DrawingIcon.png" />
+		</div><!-- /annotationButtons -->
+		<div class="colorPickerContainer">
+			<input type="color" id="annotationColor" name="color" value="#FF0000">
+		</div><!-- /colorPickerContainer -->
+		<div class="brushThickness">
+			<label for="brushThickness">Brush Thickness</label>
+			<input type="range" min="1" max="100" value="50" class="slider" id="brushThicknessSlider">
+		</div><!-- /brushThickness -->
+		<div class="annotationClearButtons">
+			<button type="submit">Clear</button>
+		</div><!-- /annotationClearButtons -->
+	</aside>
+</body>
+</html>
