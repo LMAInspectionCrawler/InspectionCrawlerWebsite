@@ -29,16 +29,16 @@
 	justify-self: center;
 }
 
-.messageOther {
+.messageMe {
 	grid-template-columns: 1fr 50px;
-	background-color: var(--off-white-2, #EFF2F7);
+	background-color: var(--dark-color-2, black);
+	color: var(--white, white);
 	padding-right: 1em;
 }
 
-.messageMe {
+.messageOther {
 	grid-template-columns: 50px 1fr;
-	background-color: var(--dark-color-2, black);
-	color: var(--white, white);
+	background-color: var(--off-white-2, #EFF2F7);
 	padding-left: 1em;
 }
 
@@ -125,22 +125,22 @@
 	border-radius: 12px;
 }
 
-.defectPopup {
+#defectPopup {
 	background-color: var(--dark-color-2, black);
 
 	/* Nested Grid */
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 3fr
-						2fr
-						1fr;
+	grid-template-rows: 1fr
+						100px
+						100px;
 }
 
 .defectImage {
 	align-self: center;
 	justify-self: center;
 	border-radius: 0px;
-	width: 90%;
+	width: 150px;
 }
 
 .defectInfo {
@@ -182,6 +182,7 @@
 }
 
 .defectButtons button:hover {
-	background-color: var(--dark-color-2, black);
-	border: var(--dark-color, black) 2px solid;
+	/*background-color: var(--dark-color-2, black);*/
+	background-color: var(--dark-color, black);
+	border: var(--my-border-color, black) 2px solid;
 }
